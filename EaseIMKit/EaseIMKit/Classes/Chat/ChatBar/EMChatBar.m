@@ -64,8 +64,8 @@
     }];
     
     self.audioButton = [[UIButton alloc] init];
-    [_audioButton setBackgroundImage:[UIImage easeUIImageNamed:@"audio-unSelected"] forState:UIControlStateNormal];
-    [_audioButton setBackgroundImage:[UIImage easeUIImageNamed:@"character"] forState:UIControlStateSelected];
+    [_audioButton setBackgroundImage:[UIImage imageNamed:@"Chat_Voice"] forState:UIControlStateNormal];
+    [_audioButton setBackgroundImage:[UIImage imageNamed:@"Chat_Keyboard"] forState:UIControlStateSelected];
     [_audioButton addTarget:self action:@selector(audioButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.audioButton];
     [_audioButton Ease_makeConstraints:^(EaseConstraintMaker *make) {
